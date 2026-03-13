@@ -1,0 +1,311 @@
+/* Conteneur principal */
+.about-page-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Changé de height fixe à min-height */
+    position: relative;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+    flex-direction: row; 
+    background-color: rgb(193, 178, 165);
+}
+
+
+.about-image-container {
+    width: 30%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    border-bottom-right-radius: 60px;
+    overflow: hidden; 
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-right: 0; 
+    left: 0;
+}
+
+.about-top-image {
+    width: 100%;
+    flex: 2; /* Prend 2/3 de l'espace */
+    object-fit: cover;
+    background-position: bottom;
+    background-size: cover; 
+    object-position: center 80%;
+}
+
+.about-bottom-image {
+    width: 100%;
+    flex: 1; /* Prend 1/3 de l'espace */
+    object-fit: cover;
+    object-position: center 70%;
+}
+
+.about-text-container {
+    width: 70%;
+    min-height: 100vh; /* Assure le contenu prend toute la hauteur */
+    background-color: rgb(193, 178, 165);
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 0 50px;
+    padding-left: 5vw;
+    padding-bottom: 50px; /* Ajoute de l'espace en bas */
+}
+
+.about-title {
+    font-family: 'Lovelace', serif;
+    font-size: max(4.5vmin, 12px);
+    margin-top: 150px;
+    margin-bottom: 0.5vh;
+}
+
+.about-paragraph {
+    font-size: 2.2vh;
+    margin-top: 2vh;
+    max-width: 80vw;
+}
+
+.about-subtitle {
+    width: 72%;
+    font-family: 'Lovelace', serif;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.about-list {
+    font-family: 'TTRg', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 0;
+    margin-left: 40px;
+    margin-bottom: 50px; /* Ajoute de l'espace après la liste */
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+/* Conteneur des boutons */
+.about-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style des boutons */
+.about-btn-specialites {
+    display: flex;
+    font-family: "TtRg";
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image à l'intérieur de l'icône */
+.about-btn-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Effet hover */
+.about-btn-specialites:hover {
+    background-color: black;
+    color: white;
+}
+
+.about-button-row {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.about-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: left;
+}
+
+.about-desktop { display: flex; } /* Changé de block à flex */
+.about-mobile { display: none; }
+
+
+@media (max-width: 768px) {
+
+    .about-desktop { display: none; }
+    .about-mobile { display: block; }
+
+    .footer-white-mobile {
+        width: 100%; 
+        height: 50px; 
+        background-color: white;
+    }
+
+    .footer-brown-mobile {
+        width: 100%; 
+        height: 50px; 
+        background-color: rgb(193, 178, 165);
+    }
+
+    .footer-banner-brown {
+        width: 100%; 
+        height: 10vh; 
+        background-color: rgb(193, 178, 165);
+    }
+
+    /* Conteneur principal en colonne unique */
+    .about-page-container {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        overflow-y: visible;
+    }
+
+    .about-image-with-text {
+        position: relative;
+        width: 100%;
+    }
+
+    .about-image-with-text img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;       
+        object-position: center 25%;
+        display: block;
+    }
+
+    .about-image-text {
+        font-family: 'Lovelace', serif;
+        font-size: max(4.5vmin, 12px);
+        color: #7E2D07;
+        position: absolute;
+        top: 50%;
+        left: 10px; 
+        width: 40%;
+        text-align: left;
+        font-size: max(8vmin, 20px);
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    /* La première image plein écran en haut */
+    .about-image-container {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        border-radius: 30px;
+        margin: 0;
+        left: 0;
+        position: relative;
+        order: 0; 
+    }
+
+    .about-title {
+        margin-top: 65px;
+        width: 90%;
+        text-align: center;
+        font-size: max(6vmin, 16px);
+    }
+
+    .about-top-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px; 
+        object-fit: cover;
+        background-position: center;
+        object-position: center;
+    }
+
+    .about-text-container {
+        width: 100%;
+        padding: 20px 5vw;
+        order: 1;
+        min-height: auto;
+    }
+
+    .about-subtitle {
+        width: fit-content;   
+        margin: 0 auto 0 auto;  
+        font-family: 'Lovelace', serif;
+        font-size: 22px;
+        text-align: center; 
+        width: 80%;
+        line-height: 1.3;
+        color: #7E2D07;
+    }
+
+    .about-subtitle-specialites {
+        margin-top: 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .about-subtitle-formations {
+        margin-top: 50px; 
+    }
+
+    .about-paragraph {
+        font-family: 'TTRg', sans-serif;
+        width: 85%;   
+        font-weight: 300;       
+        margin: 20px auto;   
+        text-align: left;  
+    }
+
+    .about-specialites,
+    .about-formations {
+        order: 2;
+    }
+
+    .about-bottom-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px; 
+        object-fit: cover;
+        object-position: center;
+        order: 3;
+        margin-top: 20px;
+    }
+
+    .footer-banner-brown {
+        width: 100%; 
+        height: 50px; 
+        background-color: rgb(193, 178, 165);
+    }
+
+    .footer-banner-brown-about {
+        width: 100%; 
+        height: 40px; 
+        background-color: rgb(193, 178, 165);
+    }
+
+    .footer-banner-white {
+        width: 100%; 
+        height: 50px; 
+        background-color: white;
+    }
+}

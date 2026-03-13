@@ -1,0 +1,27 @@
+/* Bouton "Prendre rendez-vous" */
+.appointment {
+    background-color: #789d78;
+    padding: 10px 20px;
+    border-radius: 3vmin;
+    transition: 0.3s;
+    text-align: center;
+    font-family: "TtMd";
+}
+
+.appointment-container {
+    flex: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.appointment a {
+    font-size: max(2vmin, 16px);
+    text-decoration: none;
+    color: white;
+    font-family: "TtMd";
+}
+
+.appointment:hover {
+    background-color: #496549;
+}

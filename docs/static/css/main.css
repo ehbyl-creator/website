@@ -1,0 +1,48 @@
+@import url('reset.css');
+@import url('navbar.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('carousel.css');
+@import url('about.css');
+@import url('tarifs.css');
+@import url('formations.css');
+@import url('descriptions.css');
+@import url('burger.css');
+@import url('footer.css');
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lovelace';
+    src: url('/static/fonts/Lovelace-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TtMd';
+    src: url('/static/fonts/TT Norms Pro Medium.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TtTh';
+    src: url('/static/fonts/TT Norms Pro Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TtRg';
+    src: url('/static/fonts/TT Norms Pro Regular.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}

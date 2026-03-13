@@ -1,0 +1,451 @@
+.beige-formations-container {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(193, 178, 165);
+}
+
+.formations-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:  #50352D;
+}
+
+.formation-price {
+    color: #789d78;
+}
+
+.formations-box {
+    width: 70vw;
+    height: min-content;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    padding: 2vh 2vw;
+    margin-top: 4vh;
+    border-radius: 1vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.formations-main-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 3vh;
+}
+
+.formations-title {
+    font-size: 5vmin;
+    color: white;
+    font-family: 'Lovelace', serif;
+    margin-top: 13vh;
+    text-align: left;
+}
+
+.formations-description {
+    font-size: max(2.5vmin, 14px);
+    color: white;
+    font-family: 'TtRg', sans-serif;
+    width: 70vw;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.formations-contact-text {
+    font-size: max(2.2vmin, 10px);
+    color: #7E2D07;
+    font-family: 'Lovelace', serif;
+    width: 70vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.formations-contact-text a {
+    color: #7E2D07;
+    text-decoration: underline;
+}
+
+.formations-image {
+    height: 25vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+
+.formation-name {
+    font-size: max(3.4vmin, 20px);
+    color: #7E2D07;
+    font-family: 'Lovelace', serif;
+    padding-bottom: 1vh;
+}
+
+.formations-text {
+    flex: 1;
+    font-size: max(2.3vmin, 14px);
+    color:  #50352D;
+    font-family: 'TtRg', sans-serif;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vh;
+}
+
+.formation-separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid grey;
+    margin: 0px 0px 15px 0px; 
+    opacity: 0.2; 
+}
+
+.expand-btn {
+    margin-top: 2vh;
+    font-family: 'TtMd';
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(124, 105, 105);
+    font-size: max(2vmin, 14px);
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expand-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.formations-box.expanded {
+    height: min-content; 
+}
+
+.photo-column {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-column img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formations-box.expanded .photo-column {
+    display: flex;
+}
+
+/* Texte caché par défaut */
+.hidden-text {
+    display: none;
+    margin-top: 20px;
+    font-size: max(2.1vmin, 14px);
+    color: #50352D;;
+    font-family: 'TtRg', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.formations-box.expanded .hidden-text {
+    display: block;
+}
+
+.formation-maitre-reiki .formations-image {
+    object-fit: cover; 
+    object-position: top; 
+}
+
+/* Styles pour la section des niveaux */
+.level-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.level-buttons button {
+    background-color: rgba(255, 255, 255, 0.515);
+    border: 1px solid #789d78;
+    color: #789d78;
+    font-family: "TtMd";
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.level-buttons button:hover {
+    background-color: #789d78;
+    color: white;
+}
+
+.level-buttons button.active {
+    background-color: #789d78;
+    color: white;
+}
+
+.level-content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size: max(2.2vmin, 14px);
+    font-family: 'TtRg', sans-serif;
+    line-height: 1.6;
+}
+
+/* Mise en forme de la liste */
+.level-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.level-content ul li {
+    margin-bottom: 5px;
+}
+
+.section-title {
+    color: #7E2D07;
+    font-family: 'Lovelace';
+    font-size: max(2.4vmin, 14px);
+    font-weight: 600;
+}
+
+.price-desc-formation {
+    color: #789d78;
+    font-size: max(2.2vmin, 12px);
+}
+
+/* Styles du popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-content {
+    font-family: 'TtRg', sans-serif;
+    color: black;
+}
+
+.popup a {
+    color: #7E2D07;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton de fermeture */
+.close-popup-btn {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background: none; /* Pas de fond */
+    border: none; 
+}
+
+.popup-trigger {
+    color: #789d78;
+    text-decoration: underline;
+    cursor: pointer; 
+    font-family: "TtMd";
+}
+
+.popup-trigger:hover {
+    color: #5e815e; /* Changement de couleur au survol */
+}
+
+.formations-desktop {
+    display:  block;
+}
+.formations-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 0 !important;
+    }
+
+    .footer2 {
+        margin-top: 0 !important;
+    }
+    .formations-desktop {
+        display: none;
+    }
+    .formations-mobile {
+        display: block;
+    }
+
+    .formations-box {
+        width: 90vw;
+        padding: 2vh 3vw;
+    }
+
+     .formations-box {
+        width: 90vw;
+        padding: 2vh 3vw;
+    }
+
+    .formations-main-content {
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+    }
+
+    /* Container pour image + nom sur la même ligne */
+     .formations-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3vw;
+        width: 100%;
+    }
+
+    .formations-image {
+        height: 12vh;
+        width: 12vh;
+        min-width: 12vh;
+        flex-shrink: 0;
+    }
+
+    .formation-name {
+        flex: 1;
+        font-size: max(6vmin, 25px);
+        padding-bottom: 0;
+        line-height: 1.2;
+    }
+
+    .formations-title {
+        font-size: 6vmin;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .expand-btn {
+        width: 100%;
+        padding: 1.5vh 0;
+        font-size: max(2.5vmin, 14px);
+        margin-top: 2vh;
+    }
+
+    .level-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .level-buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .hidden-text {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px 0;
+    }
+
+    .level-content {
+        font-size: max(2.5vmin, 18px);
+        padding: 15px;
+    }
+
+    /* Le reste du contenu en dessous */
+    .formations-text {
+        font-size: max(2.6vmin, 18px);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        width: 100%;
+        clear: both;
+    }
+
+    .formations-description {
+        width: 85vw;
+        font-size: max(3vmin, 18px);
+        line-height: 1.3;
+    }
+
+    .formations-contact-text {
+        font-size: max(2.5vmin, 14px);
+        color: #7E2D07;
+        font-family: 'Lovelace', serif;
+        width: 85vw;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .formations-contact-text a {
+        color: #7E2D07;
+        text-decoration: underline;
+    }
+
+    .formations-title {
+        font-size: 6vmin;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .expand-btn {
+        width: 100%;
+        padding: 1.5vh 0;
+        font-size: max(2.5vmin, 14px);
+        margin-top: 2vh;
+    }
+
+    .level-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .level-buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .hidden-text {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px 0;
+    }
+
+    .level-content {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px;
+    }
+
+    .formation-separator {
+        clear: both;
+    }
+}

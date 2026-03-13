@@ -1,0 +1,329 @@
+/*General container */
+.spe-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 178, 165);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.reiki-container {
+    background-color: white;
+}
+
+
+/* Image container */
+.spe-image-container {
+    width: 100%;
+    background-image: url('/static/images/reiki_desc.jpg');
+    background-size: cover;
+    background-position: center 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    border-radius: 0px 0px 50px 50px;
+    z-index: 2;
+}
+
+.image-leaa {
+    background-image:url('/static/images/methode_leaa_desc.jpg');
+    background-size: cover;
+    background-position: center 45%; 
+}
+
+.image-sophro {
+    background-image:url('/static/images/sophro_desc.jpg');
+    background-size: cover;
+    background-position: center 70%; 
+}
+
+.image-hypnose {
+    background-image:url('/static/images/hypnose_desc.png');
+    background-size: cover;
+    background-position: center 70%; 
+}
+
+.image-liens-trans {
+    background-image:url('/static/images/family_hands2.jpg');
+    background-size: cover;
+    background-position: center ; 
+    height: 500px;
+}
+
+
+/* Text containers */
+.spe-text-container {
+    text-align: center;
+}
+
+.spe-title {
+    text-align: center;
+    font-family: "Lovelace";
+    font-size: 9vmin;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.spe-subtitle {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: "TtRg";
+}
+
+.spe-description {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Specialités descriptions */
+.spe-bottom-text-container {
+    width: 60%;
+    text-align: left;
+    margin-top: 4vh;
+}
+
+.spe-bottom-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: "TtRg";
+}
+
+.spe-bottom-subtitle {
+    text-align: left;
+    font-size: 2.4vmin;
+    margin-top: 10px;
+    font-family: "Lovelace";
+    color: #50352D;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.spe-bottom-description {
+    text-align: left;
+    font-family: "TtRg";
+    color: white;
+    font-size: 2.2vmin;
+    width: 100%;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+/* Logo des spécialités */
+.spe-symbol {
+    width: 15vw;
+    padding-top: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.reiki-logo {
+    width: 90px;
+    height: auto;
+}
+
+.hypnose-logo {
+    width: 200px;
+    height: auto;
+}
+
+.sophro-logo {
+    width: auto;
+    height: 150px;
+}
+
+.liens-trans-logo {
+    width: 200px;
+    height: auto;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+.leaa-logo {
+    width: 200px;
+    height: auto;
+}
+
+
+/* Bannières "Pour qui ?" */
+.spe-banner {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.sophro-banner {
+    background-color: #d5dfe9c2;
+}
+
+.hypnose-banner {
+    background-color: #95c5aeb5;
+}
+
+.reiki-banner {
+    background-color: #f1b288bb;
+    height: 320px;
+}
+
+.liens-trans-banner {
+    background-color: #6b946d83;
+}
+
+.leaa-banner {
+    background-color: #d9bc94a5;
+}
+
+.spe-banner-content {
+    width: 50%;
+}
+
+.spe-banner-title {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: max(min(3vw, 3vh), 10px);
+    font-family: "Lovelace";
+    font-weight: bold;
+    color: #50352D;
+    margin: 0;
+}
+
+
+.spe-banner-description {
+    font-size: min(2.2vh, 2.2vw);
+    font-family: "TtRg";
+    color: #AC765E;
+    margin: 0.5vh 0 0 0;
+    line-height: 1.7;
+}
+
+.desc-hypnose {
+    color: #5C4A3D;
+}
+
+.desc-reiki {
+    color: #7E2D07; 
+}
+
+.desc-liens-trans {
+    color: #2F1002;
+}
+
+.bottom-desc-reiki {
+    color: #7E2D07; 
+}
+
+.spe-list {
+    list-style-type: disc;
+    margin-left: 2vh;
+    padding-left: 2vh;
+    color: white;
+    font-family: "TtRg";
+    font-size: min(2.2vh, 2.2vw);
+    line-height: 1.6;
+}
+
+.spe-list-reiki {
+    color: #7E2D07;
+}
+
+.spe-list li {
+    margin-bottom: 10px;
+}
+
+
+.spe-link-text a {
+    color: #AC765E;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.spe-link-text a:hover {
+    text-decoration: underline;
+    color: #2F1002;
+}
+
+@media (max-width: 900px) {
+    .spe-banner {
+        width: 100%;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -40px;
+        z-index: 1;
+    }
+
+    .spe-banner-title {
+        padding: 10px 5px;
+        font-size: 20px;
+        font-family: "Lovelace";
+        font-weight: bold;
+        color: #50352D;
+        margin-top: 15px;
+    }
+
+    .spe-banner-content {
+        width: 85%;
+    }
+
+    .spe-banner-description {
+        font-size: 16px;
+        font-family: "TtRg";
+        color: white;
+        margin: 0.5vh 0 0 0;
+        line-height: 1.5;
+    }
+
+    .desc-hypnose {
+        color: #5C4A3D;
+    }
+
+    .spe-bottom-text-container {
+        width: 80%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .spe-bottom-subtitle {
+        text-align: left;
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: "Lovelace";
+        color: #50352D;
+        padding: 10px auto;
+    }
+
+    .spe-bottom-description {
+        text-align: left;
+        font-family: "TtRg";
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+    .spe-list li {
+        font-size: 16px;
+    }
+
+    .bottom-desc-reiki {
+        color: #7E2D07; 
+    }
+    
+}

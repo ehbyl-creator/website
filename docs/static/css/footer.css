@@ -1,0 +1,357 @@
+/* Footer principal - Desktop */
+.footer {
+    width: 100%;
+    height: 250px;
+    color: black;
+    font-family: 'TtRg', sans-serif;
+    font-size: max(1.6vmin, 10px);
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Structure desktop (garde l'ancien layout) */
+.footer-info {
+    position: absolute;
+    bottom: 4vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    gap: 2vw;
+}
+
+.footer-contact {
+    text-align: left;
+    margin-bottom: 1.5vh;
+    font-size: max(10px, 1.4vmin);
+    font-family: 'TtRg', sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.footer-contact p {
+    margin: 3px 0;
+}
+
+.footer-contact .contact-name {
+    font-size: max(10px, 1.6vmin);
+    color: black;
+    font-family: 'TtMd', sans-serif;
+}
+
+.footer-contact .contact-email,
+.footer-contact .contact-phone {
+    font-size: max(10px, 1.4vmin);
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-contact .contact-email a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-contact .contact-email a:hover {
+    color: #496549;
+}
+
+.footer-cabinets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+}
+
+.footer-cabinet,
+.footer-left {
+    text-align: left;
+    line-height: 1.6;
+    min-width: 200px;
+    font-size: max(10px, 1.4vmin);
+    color: gray;
+}
+
+.footer-cabinet .cabinet-title {
+    color: black;
+    font-family: 'TtMd', sans-serif;
+}
+
+/* Logo central */
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center img {
+    width: 8vh;
+    height: auto;
+}
+
+/* Partenaires desktop */
+.footer-right,
+.footer-partners-section {
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+    position: absolute;
+    right: 10vw;
+    bottom: 4vh;
+    gap: 1vh;
+    flex-direction: column;
+}
+
+.footer-partners {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.footer-partners-title {
+    font-family: "TtMd", sans-serif;
+    font-size: max(10px, 1.6vmin);
+    color: black;
+    margin-bottom: 1vh;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-partners img,
+.footer-right img {
+    width: 3.5vw;
+    max-width: 35px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-partners img:hover,
+.footer-right img:hover {
+    transform: scale(1.2);
+}
+
+.footer-partners img[src*="wellfuz.png"],
+.footer-right img[src*="wellfuz.png"] {
+    width: 4vw;
+    transform: scale(1.5);
+    filter: grayscale(100%);
+}
+
+.footer-partners img[src*="ailesndavid.png"],
+.footer-right img[src*="ailesndavid.png"] {
+    width: 2.5vw;
+    max-width: 30px;
+    transform: scale(1.5);
+    filter: grayscale(100%);
+}
+
+/* Container pour mobile (caché par défaut) */
+.footer-container {
+    display: none;
+}
+
+/* Footer mobile partenaires (caché par défaut) */
+.footer-mobile-partenaires {
+    display: none;
+}
+
+/* Footer2 - Bas de page avec socials et copyright */
+.footer2 {
+    width: 100%;
+    height: 7vh;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    color: #ccc;
+    font-size: max(10px, 1.4vmin);
+    font-family: 'Arial', sans-serif;
+}
+
+.footer2-socials {
+    display: flex;
+    gap: 3.5vw;
+}
+
+.footer2-socials img {
+    width: 3vw;
+    max-width: 35px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.footer-beige {
+        background-color: rgb(193, 178, 165);
+    }
+
+.footer2-text {
+    color: white;
+    font-size: max(1.2vh, 10px);
+    font-family: "TtTh", sans-serif;
+    font-weight: normal;
+}
+
+/* Classes spécifiques pour couleurs de fond */
+.footer-white {
+    background-color: white;
+}
+
+.footer-green {
+    background-color: #789d78;
+}
+
+/* ============================================ */
+/* RESPONSIVE - MOBILE UNIQUEMENT */
+/* ============================================ */
+@media (max-width: 900px) {
+    /* Masquer l'ancienne structure desktop */
+    .footer-info,
+    .footer-center,
+    .footer-right,
+    .footer-partners-section {
+        display: none !important;
+    }
+
+    /* Activer la nouvelle structure en grille */
+    .footer {
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        position: static;
+    }
+
+    .footer-container {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 8px 10px;
+    }
+
+    .footer-beige {
+        background-color: rgb(193, 178, 165);
+    }
+
+    /* Ligne 1, Colonne 1 : Contact Laetitia */
+    .footer-contact {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.3;
+        color: gray;
+        margin: 0;
+        position: static;
+    }
+
+    .footer-contact .contact-name {
+        color: black;
+        font-family: 'TtMd', sans-serif;
+        font-size: 14px;
+        margin: 0 ;
+    }
+
+    .footer-contact p {
+        margin: 3px 0;
+    }
+
+    /* Ligne 1, Colonne 2 : Partenaires desktop */
+    .footer-partners-section-mobile {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-partners-section-mobile .footer-partners-title {
+        font-family: "TtMd", sans-serif;
+        font-size: max(2.2vmin, 14px);
+        color: black;
+        margin: 0;
+    }
+
+    .footer-partners-section-mobile .footer-partners {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .footer-partners-section-mobile .footer-partners img {
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer-partners-section-mobile .footer-partners img[src*="wellfuz.png"] {
+        width: 40px;
+        filter: grayscale(100%);
+        transform: none;
+    }
+
+    .footer-partners-section-mobile .footer-partners img[src*="ailesndavid.png"] {
+        width: 25px;
+        filter: grayscale(100%);
+        transform: none;
+    }
+
+    /* Ligne 2 : Les deux cabinets (50% - 50%) */
+    .footer-cabinets {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+        width: 100%;
+        justify-content:end;
+    }
+
+    .footer-cabinet,
+    .footer-left {
+        text-align: left;
+        font-size: 10px;
+        line-height: 1.3;
+        color: gray;
+        min-width: unset;
+    }
+
+    .footer-cabinet .cabinet-title,
+    .footer-left p:first-child {
+        color: black;
+        font-family: 'TtMd', sans-serif;
+        font-size: 14px;
+        margin:  0;
+    }
+
+    .footer-cabinet p {
+        margin: 3px 0;
+    }
+
+    /* Footer2 mobile */
+    .footer2 {
+        padding: 15px 5%;
+        height: auto;
+    }
+
+    .footer2-socials {
+        gap: 15px;
+    }
+
+    .footer2-socials img {
+        width: 20px;
+    }
+
+    .footer2-text {
+        font-size: 10px;
+    }
+}
