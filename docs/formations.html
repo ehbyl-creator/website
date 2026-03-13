@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos de moi</title>
+    <link rel="stylesheet" href="static/css/main.css" >
+    <link rel="icon" type="image/png" href="static/images/icon.png">
+    <script src="static/js/formations.js"></script>
+    <script src="static/js/burger.js"></script>
+
+</head>
+<!-- Popup Modal -->
+<div id="contactPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup-btn" onclick="closePopup()">&times;</span>
+        <h2>Contactez-moi</h2>
+        <p>Email : <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a></p>
+        <p>Téléphone : 06 61 34 72 98</p>
+    </div>
+</div>
+<body class="about-page">
+
+    <nav class="navbar">
+        <div class="burger" aria-label="Menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo-container">
+            <a href="/">
+                <img src="/static/images/logo_black.png" alt="Logo" class="navbar-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="/about">À propos</a>
+            <a href="/tarifs">Prestations & tarifs</a>
+            <a href="/formations">Formations</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn">Mes spécialités</a>
+                <div class="dropdown-content">
+                    <a href="/reiki">Reiki</a>
+                    <a href="/hypnose">Hypnose</a>
+                    <a href="/sophrologie">Sophrologie</a>
+                    <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                    <a href="/methodeleaa">Méthode LEAA</a>
+                </div>
+            </div>
+        </div>
+        <div class="appointment-container">
+            <div class="appointment">
+                 <a href="/tarifs">Prendre rendez-vous</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-drawer" class="mobile-drawer">
+        <span class="close-drawer">&times;</span>
+
+        <a href="/">Accueil</a>
+        <a href="/about">À propos</a>
+        <a href="/tarifs">Prestations & tarifs</a>
+        <a href="/formations">Formations</a>
+        <div class="drawer-dropdown">
+            <span id="drawer-dropdown-btn" class="drawer-dropdown-btn">Mes spécialités &#9662;</span>
+            <div id="drawer-dropdown-content" class="drawer-dropdown-content" style="display: none;">
+                <a href="/reiki">Reiki</a>
+                <a href="/hypnose">Hypnose</a>
+                <a href="/sophrologie">Sophrologie</a>
+                <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                <a href="/methodeleaa">Méthode LEAA</a>
+            </div>
+        </div>
+        <a href="/tarifs">Prendre rendez-vous</a>
+    </div>
+    
+     <!-- Main container -->
+    <div class="beige-formations-container formations-desktop">
+        <div class="formations-content">
+            <h1 class="formations-title">Découvrez mes formations</h1>
+            <p class="formations-description">
+                Je propose diverses formations pour vous accompagner sur votre chemin de bien-être et de développement personnel.
+                Que ce soit en Reiki, sophrologie ou autres disciplines énergétiques, chaque formation est conçue pour s'adapter
+                à vos besoins et votre progression.
+            </p>
+
+              <p class="formations-contact-text">
+                Pour vous inscrire à une formation, ou pour obtenir davantage d'informations, contactez moi par 
+                <a href="mailto:sophro.papereux@gmail.com">mail</a> ou par 
+                <a href="tel:+33661347298">téléphone</a>.
+            </p>
+
+
+             <!-- Formation pendule -->
+            <div class="formations-box">
+                <div class="formations-main-content">
+                    <img src="/static/images/formation_pendule.jpg" alt="Formation Image" class="formations-image">
+                    <div class="formations-text">
+                        <div class="formation-name">Initiation au pendule</div>
+                        <p style="color: #7E2D07;">« Tout objet suspendu au bout d’un fil est susceptible de réagir à certaines vibrations, car tout vibre dans la nature, tout émet des ondes : la matière, les pensées ou l’énergie ». <br><br></p>
+                        <p>La radiesthésie est l’art de percevoir les vibrations invisibles et inaudibles, mais pourtant bien réelles, qui émanent de tout ce qui nous entoure. <br> <br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">Initiation individuelle : 120 € - 2h00 <br> Initiation en groupe : 40 € - 3h00
+                        </p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Vous avez envie de vous initier à la pratique du pendule ? 
+                        Alors cette formation va vous faire découvrir les bases du pendule et de la radiesthésie. 
+                        Elle s'adresse à tous, que vous soyez débutant ou que vous ayez déjà une expérience en la matière.
+                        <br><br>
+                        Au programme de cette formation, vous apprendrez à vous connecter à votre pendule, 
+                        les conseils avant de pratiquer, les méthodes de purification, de rechargement et de protection.
+                        <br><br>
+                        Vous découvrirez également comment choisir un pendule, comment le tenir 
+                        ou comment poser les questions de manière claire pour obtenir les meilleures réponses.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Formation maître reiki-->
+            <div class="formations-box formation-maitre-reiki">
+                <div class="formations-main-content">
+                    <img src="/static/images/formation_reiki.jpg" alt="Formation Image" class="formations-image">
+                    <div class="formations-text">
+                        <div class="formation-name">Formation Reiki Usui</div>
+                        <p style="color: #7E2D07;">« La méthode secrète pour inviter le bonheur ». <br><br></p>
+                        <p>Le Reiki est un art énergétique d'origine japonaise développé par Mikao Usui au début du XXème siècle. Cette méthode permet de capter l'énergie universelle afin de favoriser le bien-être et la connaissance de soi. Les stages sont organisés en petit groupe afin de garantir un apprentissage de qualité et ne se font qu’en présentiel.</p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Et en apprenant à canaliser le Reiki vous pourrez l’utiliser pour vous et pour les autres.La capacité à canaliser l’énergie Reiki s’acquiert au cours de la Formation Reiki 1er degré.
+                        Le système Usui comporte 4 degrés indépendants (le 4ème étant la formation maître reiki) et chaque degré requiert une initiation. Afin de devenir Maître Reiki il conviendra alors d’être initié à chacun de ces 4 degrés.<br><br>
+                    </p>
+
+                    <div class="level-buttons">
+                        <button class="active" onclick="showLevelContent(1, this)">Niveau 1</button>
+                        <button onclick="showLevelContent(2, this)">Niveau 2</button>
+                        <button onclick="showLevelContent(3, this)">Niveau 3</button>
+                        <button onclick="showLevelContent(4, this)">Niveau Maître</button>
+                    </div>
+            
+                    <div id="level-content" class="level-content">
+                        <p class="section-title">Description<br></p>
+                        <p>Le niveau 1 permet d’apprendre et d’acquérir les bases du Reiki.<br>Cette première étape vous permet d’activer votre canal Reiki, d’apprendre l’histoire et les fondamentaux du Reiki mais aussi les 5 idéaux de Mikao Usui. 
+                        Savoir lâcher-prise, prendre du temps pour soi, la loi de l’attraction ou encore le Gassho font aussi partie du 1er degré. <br> <br></p>
+                        <p>Les bienfaits de cette première initiation sont nombreux, en voici quelques-uns :</p>
+                        <ul>
+                            <li>Connecter à l'Énergie Reiki à travers les 4 initiations pour ouvrir le canal énergétique</li>
+                            <li>Apprendre à utiliser cette énergie pour vous et pour les autres</li>
+                            <li>Favoriser votre bien-être</li>
+                            <li>Prendre soin de votre équilibre intérieur</li>
+                            <li>Vivre en harmonie avec vous-même<br><br></li>
+                        </ul>
+                        <p class="section-title">Tarifs<br></p>
+                        <p class="price-desc-formation">Individuel ou en groupe : 250 € - 1 ou 2 jours</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formation Maître Reiki -->
+            <div class="formations-box"  id="maitre-reiki">
+                <div class="formations-main-content">
+                    <img src="/static/images/formation_maitre_reiki.jpg" alt="Formation Image" class="formations-image">
+                    <div class="formations-text">
+                        <div class="formation-name">Formation Maître Reiki</div>
+                        <p>Niveau 4 de la formation Reiki Itsu. La Maîtrise est destinée à ceux qui souhaitent poursuivre leur développement spirituel et initier à leur tour. <br><br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">Formation individuelle ou en groupe : 1250 € - 4jours
+                        </p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Ce niveau est complet ; il comprend les révisions des 3 premiers niveaux. Une partie importante est consacrée à la pratique des différents protocoles d'initiation.<br><br>
+                        Les véritables bienfait sont innombrables, en voici certains :
+                        <ul style="padding-left: 20px; margin-top: 10px;list-style-type: disc;">
+                            <li>Apprendre les nouveaux symboles du système Reiki Usui / Tibet / Teate
+                            <li>Intégrer encore plus intensément l'énergie du Reiki
+                            <li>S’élever spirituellement et devenir canal
+                            <li>Acquérir toutes les connaissances et toutes les capacités énergétiques nécessaires pour enseigner tous les niveaux, y compris celui de Maître-Enseignant
+                            <li>Favoriser l’évolution constante vers la connaissance intérieure et l’amour inconditionnel
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Formation auto-hypnose -->
+            <div class="formations-box">
+                <div class="formations-main-content">
+                    <img src="/static/images/formation_hypnose.jpg" alt="Formation Image" class="formations-image">
+                    <div class="formations-text">
+                        <div class="formation-name">Formation auto-hypnose</div>
+                        <p>L’autohypnose aide à vaincre bien des situations. L’avantage est que cette méthode se pratique partout, n’importe quand et en toute autonomie. <br><br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">
+                            Formation individuelle ou en groupe : <span class="popup-trigger" onclick="openPopup()">tarif sur demande</span>
+                        </p>
+                        </p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Cette méthode est considérée comme une technique de relaxation plus poussée qui vous donne la possibilité de vous connecter à vous-même, de vous détendre et d’être plus à l’écoute de votre corps.<br><br>
+                        Tout le monde peut s’auto-hypnotiser cependant, il est parfois difficile de faire le vide en soi et de se concentrer. Pour vous aider à surmonter cet obstacle, vous pouvez suivre cette formation qui vous fera le plus grand bien et en parallèle, vous permettra de mieux maîtriser les techniques d’auto-hypnose.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="beige-formations-container formations-mobile">
+        <div class="formations-content">
+            <h1 class="formations-title">Découvrez mes formations</h1>
+            <p class="formations-description">
+                Je propose diverses formations pour vous accompagner sur votre chemin de bien-être et de développement personnel.
+                Que ce soit en Reiki, sophrologie ou autres disciplines énergétiques, chaque formation est conçue pour s'adapter
+                à vos besoins et votre progression.
+            </p>
+
+            <p class="formations-contact-text">
+                Pour vous inscrire à une formation, ou pour obtenir davantage d'informations, contactez moi par 
+                <a href="mailto:sophro.papereux@gmail.com">mail</a> ou par 
+                <a href="tel:+33661347298">téléphone</a>.
+            </p>
+            
+            <!-- Formation pendule -->
+            <div class="formations-box">
+                <div class="formations-main-content">
+                    <div class="formations-header">
+                        <img src="/static/images/formation_pendule.jpg" alt="Formation Image" class="formations-image">
+                        <div class="formation-name">Initiation au pendule</div>
+                    </div>
+                    
+                    <div class="formations-text">
+                        <p style="color: #7E2D07; font-size: max(2.4vmin, 16px);">« Tout objet suspendu au bout d'un fil est susceptible de réagir à certaines vibrations, car tout vibre dans la nature, tout émet des ondes : la matière, les pensées ou l'énergie ». <br><br></p>
+                        <p>La radiesthésie est l'art de percevoir les vibrations invisibles et inaudibles, mais pourtant bien réelles, qui émanent de tout ce qui nous entoure. <br> <br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">Initiation individuelle : 120 € - 2h00 <br> Initiation en groupe : 40 € - 3h00</p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Vous avez envie de vous initier à la pratique du pendule ? 
+                        Alors cette formation va vous faire découvrir les bases du pendule et de la radiesthésie. 
+                        Elle s'adresse à tous, que vous soyez débutant ou que vous ayez déjà une expérience en la matière.
+                        <br><br>
+                        Au programme de cette formation, vous apprendrez à vous connecter à votre pendule, 
+                        les conseils avant de pratiquer, les méthodes de purification, de rechargement et de protection.
+                        <br><br>
+                        Vous découvrirez également comment choisir un pendule, comment le tenir 
+                        ou comment poser les questions de manière claire pour obtenir les meilleures réponses.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Formation Reiki Usui -->
+            <div class="formations-box formation-maitre-reiki">
+                <div class="formations-main-content">
+                    <div class="formations-header">
+                        <img src="/static/images/formation_reiki.jpg" alt="Formation Image" class="formations-image">
+                        <div class="formation-name">Formation Reiki Usui</div>
+                    </div>
+                    
+                    <div class="formations-text">
+                        <p style="color: #7E2D07;">« La méthode secrète pour inviter le bonheur ». <br><br></p>
+                        <p>Le Reiki est un art énergétique d'origine japonaise développé par Mikao Usui au début du XXème siècle. Cette méthode permet de capter l'énergie universelle afin de favoriser le bien-être et la connaissance de soi. Les stages sont organisés en petit groupe afin de garantir un apprentissage de qualité et ne se font qu'en présentiel.</p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Et en apprenant à canaliser le Reiki vous pourrez l'utiliser pour vous et pour les autres.La capacité à canaliser l'énergie Reiki s'acquiert au cours de la Formation Reiki 1er degré.
+                        Le système Usui comporte 4 degrés indépendants (le 4ème étant la formation maître reiki) et chaque degré requiert une initiation. Afin de devenir Maître Reiki il conviendra alors d'être initié à chacun de ces 4 degrés.<br><br>
+                    </p>
+
+                    <div class="level-buttons">
+                        <button class="active" onclick="showLevelContent(1, this)">Niveau 1</button>
+                        <button onclick="showLevelContent(2, this)">Niveau 2</button>
+                        <button onclick="showLevelContent(3, this)">Niveau 3</button>
+                        <button onclick="showLevelContent(4, this)">Niveau Maître</button>
+                    </div>
+            
+                    <div id="level-content" class="level-content">
+                        <p class="section-title">Description<br></p>
+                        <p>Le niveau 1 permet d'apprendre et d'acquérir les bases du Reiki.<br>Cette première étape vous permet d'activer votre canal Reiki, d'apprendre l'histoire et les fondamentaux du Reiki mais aussi les 5 idéaux de Mikao Usui. 
+                        Savoir lâcher-prise, prendre du temps pour soi, la loi de l'attraction ou encore le Gassho font aussi partie du 1er degré. <br> <br></p>
+                        <p>Les bienfaits de cette première initiation sont nombreux, en voici quelques-uns :</p>
+                        <ul>
+                            <li>Connecter à l'Énergie Reiki à travers les 4 initiations pour ouvrir le canal énergétique</li>
+                            <li>Apprendre à utiliser cette énergie pour vous et pour les autres</li>
+                            <li>Favoriser votre bien-être</li>
+                            <li>Prendre soin de votre équilibre intérieur</li>
+                            <li>Vivre en harmonie avec vous-même<br><br></li>
+                        </ul>
+                        <p class="section-title">Tarifs<br></p>
+                        <p class="price-desc-formation">Individuel ou en groupe : 250 € - 1 ou 2 jours</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formation Maître Reiki -->
+            <div class="formations-box" id="maitre-reiki">
+                <div class="formations-main-content">
+                    <div class="formations-header">
+                        <img src="/static/images/formation_maitre_reiki.jpg" alt="Formation Image" class="formations-image">
+                        <div class="formation-name">Formation Maître Reiki</div>
+                    </div>
+                    
+                    <div class="formations-text">
+                        <p>Niveau 4 de la formation Reiki Itsu. La Maîtrise est destinée à ceux qui souhaitent poursuivre leur développement spirituel et initier à leur tour. <br><br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">Formation individuelle ou en groupe : 1250 € - 4jours</p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Ce niveau est complet ; il comprend les révisions des 3 premiers niveaux. Une partie importante est consacrée à la pratique des différents protocoles d'initiation.<br><br>
+                        Les véritables bienfait sont innombrables, en voici certains :
+                        <ul style="padding-left: 20px; margin-top: 10px;list-style-type: disc;">
+                            <li>Apprendre les nouveaux symboles du système Reiki Usui / Tibet / Teate
+                            <li>Intégrer encore plus intensément l'énergie du Reiki
+                            <li>S'élever spirituellement et devenir canal
+                            <li>Acquérir toutes les connaissances et toutes les capacités énergétiques nécessaires pour enseigner tous les niveaux, y compris celui de Maître-Enseignant
+                            <li>Favoriser l'évolution constante vers la connaissance intérieure et l'amour inconditionnel
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Formation auto-hypnose -->
+            <div class="formations-box">
+                <div class="formations-main-content">
+                    <div class="formations-header">
+                        <img src="/static/images/formation_hypnose.jpg" alt="Formation Image" class="formations-image">
+                        <div class="formation-name">Formation auto-hypnose</div>
+                    </div>
+                    
+                    <div class="formations-text">
+                        <p>L'autohypnose aide à vaincre bien des situations. L'avantage est que cette méthode se pratique partout, n'importe quand et en toute autonomie. <br><br></p>
+                        <hr class="formation-separator">
+                        <p class="formation-price">
+                            Formation individuelle ou en groupe : <span class="popup-trigger" onclick="openPopup()">tarif sur demande</span>
+                        </p>
+                        <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
+                    </div>
+                </div>
+            
+                <div class="hidden-text">
+                    <p>
+                        Cette méthode est considérée comme une technique de relaxation plus poussée qui vous donne la possibilité de vous connecter à vous-même, de vous détendre et d'être plus à l'écoute de votre corps.<br><br>
+                        Tout le monde peut s'auto-hypnotiser cependant, il est parfois difficile de faire le vide en soi et de se concentrer. Pour vous aider à surmonter cet obstacle, vous pouvez suivre cette formation qui vous fera le plus grand bien et en parallèle, vous permettra de mieux maîtriser les techniques d'auto-hypnose.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-banner"></div>
+
+    <!-- Footer -->
+    <footer class="footer footer-beige">
+        <!-- Structure Desktop (ancienne) -->
+        <div class="footer-info">
+            <div class="footer-contact">
+                <p class="contact-name">Laetitia Papereux</p>
+                <p class="contact-email">
+                    <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a>
+                </p>
+                <p class="contact-phone">+33 6 61 34 72 98</p>
+            </div>
+
+            <div class="footer-cabinets">
+                <div class="footer-left">
+                    <p style="color: black; font-family: 'TtMd';">Cabinet</p>
+                    <p>1 rue Maurice Leblanc<br>78290 Croissy-sur-Seine</p>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <img src="/static/images/logo_black.png" alt="Logo central">
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-partners-title">Partenaires</p>
+            <div class="footer-partners">
+                <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                    <img src="/static/images/wellfuz.png" alt="Wellfuz">
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Structure Mobile (grille 2x2) - visible uniquement sur mobile -->
+        <div class="footer-container">
+            <!-- Ligne 1, Colonne 1 : Contact Laetitia (3/4) -->
+            <div class="footer-contact">
+                <p class="contact-name">Laetitia Papereux</p>
+                <p class="contact-email">
+                    <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a>
+                </p>
+                <p class="contact-phone">
+                    <a href="tel:+33661347298">+33 6 61 34 72 98</a>
+                </p>
+            </div>
+
+            <!-- Ligne 1, Colonne 2 : Partenaires (1/4) -->
+            <div class="footer-partners-section-mobile">
+                <p class="footer-partners-title">Partenaires</p>
+                <div class="footer-partners">
+                    <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                        <img src="/static/images/wellfuz.png" alt="Wellfuz">
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Ligne 2 : Les deux cabinets (50% - 50%) -->
+            <div class="footer-cabinets">
+                <div class="footer-cabinet">
+                    <p class="cabinet-title">Cabinet</p>
+                    <p>1 rue Maurice Leblanc<br>78290 Croissy-sur-Seine</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer2">
+        <div class="footer2-socials">
+            <a href="https://www.instagram.com/energie_et_harmonie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+                <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
+            </a>
+            
+        </div>
+        <p class="footer2-text">Copyright © 2025 Énergie & Harmonie by L. All Rights Reserved.</p>
+    </div>
+
+ 
+</body>
+</html>

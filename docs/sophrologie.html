@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiki</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="icon" type="image/png" href="static/images/icon.png">
+    <script src="static/js/burger.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="burger" aria-label="Menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo-container">
+            <a href="/">
+                <img src="/static/images/logo_black.png" alt="Logo" class="navbar-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="/about">À propos</a>
+            <a href="/tarifs">Prestations & tarifs</a>
+            <a href="/formations">Formations</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn">Mes spécialités</a>
+                <div class="dropdown-content">
+                    <a href="/reiki">Reiki</a>
+                    <a href="/hypnose">Hypnose</a>
+                    <a href="/sophrologie">Sophrologie</a>
+                    <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                    <a href="/methodeleaa">Méthode LEAA</a>
+                </div>
+            </div>
+        </div>
+        <div class="appointment-container">
+            <div class="appointment">
+                 <a href="/tarifs">Prendre rendez-vous</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-drawer" class="mobile-drawer">
+        <span class="close-drawer">&times;</span>
+
+        <a href="/">Accueil</a>
+        <a href="/about">À propos</a>
+        <a href="/tarifs">Prestations & tarifs</a>
+        <a href="/formations">Formations</a>
+        <div class="drawer-dropdown">
+            <span id="drawer-dropdown-btn" class="drawer-dropdown-btn">Mes spécialités &#9662;</span>
+            <div id="drawer-dropdown-content" class="drawer-dropdown-content" style="display: none;">
+                <a href="/reiki">Reiki</a>
+                <a href="/hypnose">Hypnose</a>
+                <a href="/sophrologie">Sophrologie</a>
+                <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                <a href="/methodeleaa">Méthode LEAA</a>
+            </div>
+        </div>
+        <a href="/tarifs">Prendre rendez-vous</a>
+    </div>
+
+
+    <!-- Container principal-->
+    <div class="spe-container">
+        <div class="spe-image-container image-sophro">
+            <img src="/static/images/sophro_logo.png" alt="Sophrologie" class="spe-symbol sophro-logo">
+            <div class="spe-text-container">
+                <h1 class="spe-title">La Sophrologie</h1>
+            </div>
+        </div>
+
+        <div class="spe-banner sophro-banner">
+            <div class="spe-banner-content">
+                <h2 class="spe-banner-title">Pour qui ?</h2>
+                <p class="spe-banner-description">La sophrologie est utile pour améliorer le quotidien , elle  s’adresse à tous :<br>enfants (sous forme ludique à 
+                    partir de 4 ou 5 ans), adolescents, adultes, séniors.</p>
+            </div>
+        </div>
+
+        <div class="spe-bottom-text-container">
+            <h2 class="spe-bottom-subtitle">C'est quoi exactement ?</h2>
+            <p class="spe-bottom-description">
+                La sophrologie est une méthode psycho-corporelle, elle est inspirée de techniques occidentales et orientales. <br><br>
+                Cette méthode est constituée d'exercices de respiration associés à des mouvements doux ainsi que des des visualisations positives guidées par la voix du sophrologue. <br>
+                La sophrologie peut s’appliquer dans de nombreux domaines et à un grand nombre de problématiques.<br><br>
+                On distingue 4 grands domaines d’intervention : 
+                <ul class="spe-list">
+                    <li>La gestion du quotidien (stress, émotions, sommeil, confiance en soi, …)</li>
+                    <li>La préparation à un événement (examen, compétition, permis de conduire, accouchement, etc.)</li>
+                    <li>L'accompagnement d’un traitement médical (gestion de la douleur)</li>
+                    <li>L'accompagnement d’un comportement pathologique</li>
+                </ul>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-brown-mobile"></div>
+
+    <!-- Footer -->
+    <footer class="footer footer-beige">
+        <!-- Structure Desktop (ancienne) -->
+        <div class="footer-info">
+            <div class="footer-contact">
+                <p class="contact-name">Laetitia Papereux</p>
+                <p class="contact-email">
+                    <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a>
+                </p>
+                <p class="contact-phone">+33 6 61 34 72 98</p>
+            </div>
+
+            <div class="footer-cabinets">
+                <div class="footer-left">
+                    <p style="color: black; font-family: 'TtMd';">Cabinet</p>
+                    <p>1 rue Maurice Leblanc<br>78290 Croissy-sur-Seine</p>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <img src="/static/images/logo_black.png" alt="Logo central">
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-partners-title">Partenaires</p>
+            <div class="footer-partners">
+                <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                    <img src="/static/images/wellfuz.png" alt="Wellfuz">
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Structure Mobile (grille 2x2) - visible uniquement sur mobile -->
+        <div class="footer-container">
+            <!-- Ligne 1, Colonne 1 : Contact Laetitia (3/4) -->
+            <div class="footer-contact">
+                <p class="contact-name">Laetitia Papereux</p>
+                <p class="contact-email">
+                    <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a>
+                </p>
+                <p class="contact-phone">
+                    <a href="tel:+33661347298">+33 6 61 34 72 98</a>
+                </p>
+            </div>
+
+            <!-- Ligne 1, Colonne 2 : Partenaires (1/4) -->
+            <div class="footer-partners-section-mobile">
+                <p class="footer-partners-title">Partenaires</p>
+                <div class="footer-partners">
+                    <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                        <img src="/static/images/wellfuz.png" alt="Wellfuz">
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Ligne 2 : Les deux cabinets (50% - 50%) -->
+            <div class="footer-cabinets">
+                <div class="footer-cabinet">
+                    <p class="cabinet-title">Cabinet</p>
+                    <p>1 rue Maurice Leblanc<br>78290 Croissy-sur-Seine</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer2">
+        <div class="footer2-socials">
+            <a href="https://www.instagram.com/energie_et_harmonie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+                <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
+            </a>
+            
+        </div>
+        <p class="footer2-text">Copyright © 2025 Énergie & Harmonie by L. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
